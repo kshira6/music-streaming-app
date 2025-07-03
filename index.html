@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streamify - Your Music Universe</title>
+    <meta name="description" content="Streamify - Stream your favorite music anytime, anywhere" />
+    <meta name="author" content="Streamify" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <div class="logo-icon">
+            <i class="bi bi-music-note-beamed text-white"></i>
+          </div>
+          Streamify
+        </a>
+
+        <div class="search-container mx-auto d-none d-md-block">
+          <input type="text" class="form-control search-input" placeholder="Search for songs, artists, albums...">
+          <button class="search-btn" type="button">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <button class="btn btn-auth d-none-mobile">Log In</button>
+          <button class="btn btn-auth primary">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top: 76px;">
+      <div class="row">
+ 
+        <div class="col-md-3 col-lg-2 sidebar d-none d-md-block">
+          <div class="p-3">
+            <a href="#" class="sidebar-item active">
+              <i class="bi bi-house-door"></i>
+              Home
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="bi bi-search"></i>
+              Search
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="bi bi-collection"></i>
+              Your Library
+            </a>
+            
+            <hr class="border-secondary my-3">
+            
+            <a href="#" class="sidebar-item">
+              <i class="bi bi-plus-square"></i>
+              Create Playlist
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="bi bi-heart"></i>
+              Liked Songs
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="bi bi-download"></i>
+              Downloaded
+            </a>
+            
+            <hr class="border-secondary my-3">
+            
+            <div class="px-3">
+              <h6 class="text-secondary text-uppercase small mb-2">Your Playlists</h6>
+              <a href="#" class="sidebar-item">
+                <i class="bi bi-music-note-list"></i>
+                My Favorites
+              </a>
+              <a href="#" class="sidebar-item">
+                <i class="bi bi-music-note-list"></i>
+                Road Trip Hits
+              </a>
+              <a href="#" class="sidebar-item">
+                <i class="bi bi-music-note-list"></i>
+                Workout Mix
+              </a>
+            </div>
+          </div>
+        </div>
+
+  
+        <div class="col-md-9 col-lg-10 main-content">
+ 
+          <div class="recently-played">
+            <h2 class="section-title gradient-text">Good evening</h2>
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="d-flex align-items-center bg-secondary rounded p-2" style="background: var(--hover-bg) !important;">
+                  <div class="playlist-cover me-3" style="width: 48px; height: 48px; margin-bottom: 0;">
+                    <i class="bi bi-heart-fill" style="font-size: 1rem;"></i>
+                  </div>
+                  <span class="text-white fw-medium">Liked Songs</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="d-flex align-items-center bg-secondary rounded p-2" style="background: var(--hover-bg) !important;">
+                  <div class="playlist-cover me-3" style="width: 48px; height: 48px; margin-bottom: 0;">
+                    <i class="bi bi-music-note-list" style="font-size: 1rem;"></i>
+                  </div>
+                  <span class="text-white fw-medium">My Favorites</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <section class="mb-5">
+            <h2 class="section-title">Featured Playlists</h2>
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="playlist-card">
+                  <div class="playlist-cover">
+                    <i class="bi bi-music-note-beamed"></i>
+                  </div>
+                  <h5 class="playlist-title">Today's Top Hits</h5>
+                  <p class="playlist-subtitle">The most played songs right now</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="playlist-card">
+                  <div class="playlist-cover" style="background: linear-gradient(135deg, #ff6b6b, #ee5a52);">
+                    <i class="bi bi-fire"></i>
+                  </div>
+                  <h5 class="playlist-title">Hot Hits</h5>
+                  <p class="playlist-subtitle">Trending music everyone's talking about</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="playlist-card">
+                  <div class="playlist-cover" style="background: linear-gradient(135deg, #4ecdc4, #44a08d);">
+                    <i class="bi bi-headphones"></i>
+                  </div>
+                  <h5 class="playlist-title">Chill Vibes</h5>
+                  <p class="playlist-subtitle">Relax and unwind with these tracks</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="playlist-card">
+                  <div class="playlist-cover" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                    <i class="bi bi-lightning"></i>
+                  </div>
+                  <h5 class="playlist-title">Workout Mix</h5>
+                  <p class="playlist-subtitle">High-energy tracks for your workout</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="mb-5">
+            <h2 class="section-title">Recently Played</h2>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="song-item">
+                  <div class="song-cover">
+                    <i class="bi bi-music-note text-white"></i>
+                  </div>
+                  <div class="song-info">
+                    <div class="song-title">Life of Ram</div>
+                    <div class="song-artist">Govind Vasantha</div>
+                  </div>
+                  <div class="song-duration">3:20</div>
+                </div>
+                
+                <div class="song-item">
+                  <div class="song-cover">
+                    <i class="bi bi-music-note text-white"></i>
+                  </div>
+                  <div class="song-info">
+                    <div class="song-title">Amizhdhe nee</div>
+                    <div class="song-artist">Karthik</div>
+                  </div>
+                  <div class="song-duration">2:54</div>
+                </div>
+                
+                <div class="song-item">
+                  <div class="song-cover">
+                    <i class="bi bi-music-note text-white"></i>
+                  </div>
+                  <div class="song-info">
+                    <div class="song-title">Nenjukulle</div>
+                    <div class="song-artist">Shakthisree Gopalan</div>
+                  </div>
+                  <div class="song-duration">3:23</div>
+                </div>
+                
+                <div class="song-item">
+                  <div class="song-cover">
+                    <i class="bi bi-music-note text-white"></i>
+                  </div>
+                  <div class="song-info">
+                    <div class="song-title">Ei Suzhali</div>
+                    <div class="song-artist">Vijay Narain</div>
+                  </div>
+                  <div class="song-duration">2:58</div>
+                </div>
+                
+                <div class="song-item">
+                  <div class="song-cover">
+                    <i class="bi bi-music-note text-white"></i>
+                  </div>
+                  <div class="song-info">
+                    <div class="song-title">Yaendi Yaendi</div>
+                    <div class="song-artist">Shruti Haasan</div>
+                  </div>
+                  <div class="song-duration">2:21</div>
+                </div>
+              </div>
+              
+              <div class="col-lg-4">
+                <div class="playlist-card">
+                  <h5 class="playlist-title mb-3">Recommended for You</h5>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="song-cover me-3" style="width: 40px; height: 40px;">
+                      <i class="bi bi-music-note text-white" style="font-size: 0.8rem;"></i>
+                    </div>
+                    <div>
+                      <div class="song-title" style="font-size: 0.9rem;">Kannadi Poove</div>
+                      <div class="song-artist" style="font-size: 0.8rem;">Santhosh Narayanan</div>
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="song-cover me-3" style="width: 40px; height: 40px;">
+                      <i class="bi bi-music-note text-white" style="font-size: 0.8rem;"></i>
+                    </div>
+                    <div>
+                      <div class="song-title" style="font-size: 0.9rem;">Aval</div>
+                      <div class="song-artist" style="font-size: 0.8rem;">Pradeep Singh</div>
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex align-items-center">
+                    <div class="song-cover me-3" style="width: 40px; height: 40px;">
+                      <i class="bi bi-music-note text-white" style="font-size: 0.8rem;"></i>
+                    </div>
+                    <div>
+                      <div class="song-title" style="font-size: 0.9rem;">Raati</div>
+                      <div class="song-artist" style="font-size: 0.8rem;">Santhosh</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-5">
+            <h2 class="section-title">Made For You</h2>
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="playlist-card">
+                  <div class="playlist-cover" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                    <i class="bi bi-person-circle"></i>
+                  </div>
+                  <h5 class="playlist-title">Discover Weekly</h5>
+                  <p class="playlist-subtitle">Your weekly mixtape of fresh music</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="playlist-card">
+                  <div class="playlist-cover" style="background: linear-gradient(135deg, #ffeaa7, #fab1a0);">
+                    <i class="bi bi-calendar-week"></i>
+                  </div>
+                  <h5 class="playlist-title">Release Radar</h5>
+                  <p class="playlist-subtitle">Catch all the latest music from artists you follow</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="playlist-card">
+                  <div class="playlist-cover" style="background: linear-gradient(135deg, #fd79a8, #e84393);">
+                    <i class="bi bi-shuffle"></i>
+                  </div>
+                  <h5 class="playlist-title">Daily Mix 1</h5>
+                  <p class="playlist-subtitle">Made for you • Updated daily</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="playlist-card">
+                  <div class="playlist-cover" style="background: linear-gradient(135deg, #00cec9, #00b894);">
+                    <i class="bi bi-graph-up"></i>
+                  </div>
+                  <h5 class="playlist-title">On Repeat</h5>
+                  <p class="playlist-subtitle">Songs you can't stop playing</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid fixed-bottom px-4 py-3" style="background: var(--card-bg); border-top: 1px solid #2a2a2a;">
+      <div class="d-flex align-items-center justify-content-between flex-wrap">
+
+    <div class="d-flex align-items-center mb-2 mb-md-0">
+      <img src="PIC.webp" alt="Album Art" class="rounded" style="width: 60px; height: 60px; object-fit: cover; margin-right: 15px;">
+      <div>
+        <div class="song-title" style="font-size: 1rem;">Poraney Poraney</div>
+        <div class="song-artist" style="font-size: 0.9rem;">Ranjith</div>
+      </div>
+    </div>
+
+    <div class="d-none d-md-flex align-items-center gap-1" style="height: 40px;">
+      <div style="width: 3px; height: 12px; background: var(--primary-color);"></div>
+      <div style="width: 3px; height: 22px; background: var(--primary-color);"></div>
+      <div style="width: 3px; height: 17px; background: var(--primary-color);"></div>
+      <div style="width: 3px; height: 25px; background: var(--primary-color);"></div>
+      <div style="width: 3px; height: 16px; background: var(--primary-color);"></div>
+      <div style="width: 3px; height: 20px; background: var(--primary-color);"></div>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <button class="btn text-white"><i class="bi bi-skip-backward-fill"></i></button>
+      <button class="btn text-white mx-2"><i class="bi bi-play-circle-fill" style="font-size: 1.5rem;"></i></button>
+      <button class="btn text-white"><i class="bi bi-skip-forward-fill"></i></button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
